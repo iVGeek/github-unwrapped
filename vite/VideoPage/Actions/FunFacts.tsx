@@ -47,19 +47,19 @@ const getFunFacts = (stats: ProfileStats): FunFact[] => {
     text: `Your peak coding hour is ${timeLabel}`,
   });
 
-  // Day of week
+  // Day of week - in the data: 0=Monday, 1=Tuesday, ..., 5=Saturday, 6=Sunday
   const weekdays = [
-    "Sunday",
     "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
     "Friday",
     "Saturday",
+    "Sunday",
   ];
-  const topDay = weekdays[parseInt(stats.topWeekday, 10)];
-  const isWeekend =
-    parseInt(stats.topWeekday, 10) === 0 || parseInt(stats.topWeekday, 10) === 6;
+  const weekdayNum = parseInt(stats.topWeekday, 10);
+  const topDay = weekdays[weekdayNum];
+  const isWeekend = weekdayNum === 5 || weekdayNum === 6;
   facts.push({
     emoji: isWeekend ? "🎉" : "💼",
     text: `${topDay} is your power day`,

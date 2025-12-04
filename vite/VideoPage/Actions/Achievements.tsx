@@ -112,7 +112,7 @@ const getAchievements = (stats: ProfileStats): Achievement[] => {
     });
   }
 
-  // Weekend warrior
+  // Weekend warrior - in the data: 0=Monday, 5=Saturday, 6=Sunday
   const weekdayNum = parseInt(stats.topWeekday, 10);
   if (weekdayNum === 5 || weekdayNum === 6) {
     achievements.push({
