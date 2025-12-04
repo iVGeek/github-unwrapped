@@ -4,18 +4,28 @@
 
 A platform that generates a year-in-review video for each GitHub user. Built with Vite 5, Remotion and AWS Lambda.
 
-## Make your own
+## ✨ Features
 
-Want to make your own year-in-review for your users?
-
-Feel free to fork and use this repository as a template! Note the legal disclaimers at the bottom of this README.
+- 🎬 **Personalized Video**: Get a stunning animated video of your GitHub year
+- 🚀 **Top Languages**: See your most-used programming languages
+- 📊 **Contribution Stats**: Track your commits, PRs, and issues
+- 📅 **Productivity Insights**: Discover your most productive days and times
+- ⭐ **Stars & Streaks**: View stars given and longest contribution streaks
+- 🏆 **Achievement Badges**: Earn badges based on your coding activity
 
 ## Versions
 
-- 2024: `main` branch
+- 2025: `main` branch
+- 2024: `2024` branch
 - 2023: `2023` branch
 - 2022: [`github-unwrapped-2022` Repo](https://github.com/remotion-dev/github-unwrapped-2022)
 - 2021: [`github-unwrapped-2021` Repo](https://github.com/remotion-dev/github-unwrapped-2021)
+
+## 🚀 Make your own
+
+Want to create your own year-in-review for your users? Feel free to fork and use this repository as a template!
+
+Note the legal disclaimers at the bottom of this README.
 
 ## Setup
 

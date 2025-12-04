@@ -1,7 +1,9 @@
 import type { PlayerRef } from "@remotion/player";
 import React from "react";
 import type { z } from "zod";
-import type { Rocket, compositionSchema } from "../../../src/config";
+import type { ProfileStats, Rocket, compositionSchema } from "../../../src/config";
+import { Achievements } from "../Actions/Achievements";
+import { FunFacts } from "../Actions/FunFacts";
 import { FurtherActions } from "../Actions/FurtherActions";
 import { SharingActions } from "../Actions/SharingActions";
 import { RocketPicker } from "../RocketSelection/RocketPicker";
@@ -24,6 +26,8 @@ export const Sidebar: React.FC<{
   setIsPlaying,
   playerRef,
 }) => {
+  const userStats = window.__USER__ as ProfileStats | "not-found";
+
   return (
     <div className={styles.sidebarWrapper}>
       <div>
@@ -55,6 +59,12 @@ export const Sidebar: React.FC<{
       )}
       {/* Sharing Actions */}
       <SharingActions />
+
+      {/* Achievements */}
+      {userStats !== "not-found" && <Achievements stats={userStats} />}
+
+      {/* Fun Facts */}
+      {userStats !== "not-found" && <FunFacts stats={userStats} />}
 
       {/* Further Action */}
       <FurtherActions />

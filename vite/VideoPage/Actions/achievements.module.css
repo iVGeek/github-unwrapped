@@ -1,0 +1,61 @@
+.achievementsWrapper {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.achievementsTitle {
+  color: var(--pane-text);
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.achievementsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.achievementBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: background 0.2s ease;
+}
+
+.achievementBadge:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.achievementEmoji {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.achievementText {
+  overflow: hidden;
+}
+
+.achievementTitle {
+  color: var(--pane-text);
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.achievementDesc {
+  color: var(--pane-text);
+  font-size: 10px;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

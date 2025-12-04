@@ -74,21 +74,22 @@ export const content: Array<AboutItemContent> = [
     ),
   },
   {
-    id: "same-as-2023",
+    id: "whats-new-2025",
     icon: "/calendar.svg",
-    title: "Is this the same as 2023?",
+    title: "What's new in 2025?",
     description: "",
     node: (
       <div>
         <p>
-          Yes, mostly - the teams from Remotion and For One Red have been busy
-          this year with other projects.
+          GitHub Unwrapped 2025 brings your year in review to life! We{"'"}ve
+          enhanced the experience with more engaging insights and better
+          visualizations.
         </p>
         <br />
         <p>
-          For every new campaign we do, we want to excel and improve on the
-          previous one – we decided to take a break and are considering a new
-          campaign for 2025!
+          This year{"'"}s edition includes your contribution stats, top programming
+          languages, productivity patterns, and much more - all wrapped up in a
+          stunning personalized video!
         </p>
       </div>
     ),
